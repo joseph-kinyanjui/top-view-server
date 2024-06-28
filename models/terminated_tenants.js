@@ -1,11 +1,15 @@
 const mongoose = require('mongoose');
 
-const TenantSchema = new mongoose.Schema({
+const TerminatedTenantSchema = new mongoose.Schema({
     property_name: {
         type: String,
         required: true
     },
     property_id:{
+        type: String,
+        required: true
+    },
+    tenant_id:{
         type: String,
         required: true
     },
@@ -48,6 +52,6 @@ const TenantSchema = new mongoose.Schema({
     
 });
 
-const Tenants = mongoose.model('tenants', TenantSchema);
+const TerminatedTenants = mongoose.model('terminated_tenants', TerminatedTenantSchema);
 
-module.exports = Tenants ;
+module.exports = TerminatedTenants ;
