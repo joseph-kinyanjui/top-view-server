@@ -21,6 +21,10 @@ const PropertySchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    payment_date: {
+        type: String,
+        required: true
+    },
     bank_name: {
         type: String,
         required: true
@@ -43,6 +47,10 @@ const PropertySchema = new mongoose.Schema({
     },
     mri_itax_pass: {
         type: String,
+        required: true
+    },
+    property_commission_rate: {
+        type: Number,
         required: true
     }
     

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const TenantsStatememtsSchema= new mongoose.Schema({
+const  NewTenantsStatememtsSchema = new mongoose.Schema({
     property_name: {
         type: String,
         required: true
@@ -9,23 +9,27 @@ const TenantsStatememtsSchema= new mongoose.Schema({
         type: String,
         required: true
     },
-    hse_number: {
-        type: String,
-        required: true
-    },
     tenant_name: {
         type: String,
         required: true
     },
-    payment_date: {
+    tenant_id: {
         type: String,
         required: true
     },
-    month_number: {
+    house_number: {
+        type: String,
+        required: true
+    },
+    payment_month: {
+        type: String,
+        required: true
+    },
+    month_number:{
         type: Number,
         required: true
     },
-    house_rate: {
+    rent_rate: {
         type: Number,
         required: true
     },
@@ -41,28 +45,14 @@ const TenantsStatememtsSchema= new mongoose.Schema({
         type: Number,
         required: true
     },
-    arrears_paid: {
-        type: Number,
-        required: true
-    },
     arrears_cf: {
         type: Number,
         required: true
-    },
-    contact: {
-        type: String,
-        required: true
-    },
-    months_rent_status: {
-        type: String,
-        required: true
-    },
-    tenant_id: {
-        type: String,
-        required: true
     }
+
+    
 });
 
-const TenantsStatements = mongoose.model('tenants_statements', TenantsStatememtsSchema);
+const NewTenantsStatements = mongoose.model('new_tenants_statements', NewTenantsStatememtsSchema);
 
-module.exports = TenantsStatements;
+module.exports = NewTenantsStatements;
