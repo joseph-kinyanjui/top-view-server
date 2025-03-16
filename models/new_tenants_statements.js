@@ -17,6 +17,10 @@ const  NewTenantsStatememtsSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    tenant_status:{
+        type: String,
+        required: true
+    },
     house_number: {
         type: String,
         required: true

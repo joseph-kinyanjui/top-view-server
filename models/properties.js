@@ -34,11 +34,11 @@ const PropertySchema = new mongoose.Schema({
         required: true
     },
     kplc_meter: {
-        type: Number,
+        type: String,
         required: true
     },
     water_meter: {
-        type: Number,
+        type: String,
         required: true
     },
     mri_kra_pin: {

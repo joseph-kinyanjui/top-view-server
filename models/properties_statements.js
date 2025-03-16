@@ -30,19 +30,19 @@ const PropertiesStatementsSchema = new mongoose.Schema({
         required: true
     },
     account_number: {
-        type: Number,
+        type: String,
         required: true
     },
     kplc_meter: {
-        type: Number,
+        type: String,
         required: true
     },
     kplc_units: {
-        type: Number,
+        type: String,
         required: true
     },
     kplc_amount: {
-        type: Number,
+        type: String,
         required: true
     },
     water_amount: {
